@@ -52,6 +52,6 @@ embeddings = embedding_model.embed_documents(question_answer)
 print(embeddings)
 
 embedding_collection.insert_one({
-        'first_document':embeddings[0],
-        'second_document':embeddings[1]
+        'question_embeddings':embeddings[0],
+        'answer_embeddings':embeddings[1]
     })
