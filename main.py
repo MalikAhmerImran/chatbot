@@ -85,5 +85,5 @@ max_similarity=max(similarity_list)
 max_value_index=similarity_list.index(max(similarity_list))
 best_answer=documents[max_value_index]['answer']
 
-print(f"Most similar text: {best_answer}")
+print(f"output: {best_answer}")
 print(f"Similarity score: {max_similarity}")
