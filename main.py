@@ -18,7 +18,7 @@ llm = ChatGroq(
     max_tokens=None,
     timeout=None,
     max_retries=2,
-    api_key='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'
+    api_key=''
 
 )
 
