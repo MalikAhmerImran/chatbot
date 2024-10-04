@@ -43,7 +43,7 @@ class Product(BaseModel):
     )
 
 
-@app.post('/students')
+@app.post('/products')
 async def creating_product(product:Product):
 
     new_product=await product_collection.insert_one(product.model_dump(by_alias=True,exclude=["id"]))  
@@ -53,7 +53,7 @@ async def creating_product(product:Product):
 
     return created_product
 
-@app.get('/studentdetails')
+@app.get('/productdetails')
 async def studentlist():
     products = await product_collection.find().to_list(length=None)  
     for product in products:
